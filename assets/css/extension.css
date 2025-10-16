@@ -1,0 +1,106 @@
+.theiaStickySidebar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.overlay-container[data-v-90367226] {
+    bottom: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    display: grid;
+    grid-template-columns: var(--b8f9171a);
+    left: 0;
+    position: fixed;
+    right: 0;
+    row-gap: 0;
+    top: 0;
+    z-index: var(--ef484772);
+}
+.overlay[data-v-90367226] {
+    background-color: rgba(0, 0, 0, 0.33);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.overlay-center[data-v-90367226] {
+    -moz-column-gap: 0;
+    column-gap: 0;
+    display: grid;
+    grid-template-rows: var(--12361785);
+    row-gap: 0;
+}
+.accordion {
+    position: relative;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.accordion::after {
+    content: "▶";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.725rem;
+    transition: all 0.125s linear;
+}
+
+.accordion.active {
+    background-color: #e1e1e1;
+}
+
+.accordion.accordion.active::after {
+    transform: rotate(90deg) translate(-100%, 50%);
+}
+
+.accordion:hover {
+    background: #e9e9e9;
+}
+
+.panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: left;
+}
+
+.panel p {
+    margin-bottom: 0;
+}
+
+.free-section {
+    background: white;
+    margin: 4rem 0;
+}
+
+.free-container {
+    padding: 4rem 0;
+}
+
+.free-container .free-title,
+.free-container .free-description {
+    text-align: center;
+}
+
+.about-section {
+    margin-bottom: 4rem;
+}
+
+.about-title {
+    text-align: center;
+}
+
+#block-19 .container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
